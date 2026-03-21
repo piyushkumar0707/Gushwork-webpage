@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Temporary directories and raw assets
+14/
+assign photos/
+
+# Extra generated screenshots and image files
+Gushwork Assignment.png
+final-screenshot.png
+puppeteer-screenshot.png
+ce5a170c60004b853d7c68fb0ec5bf7ee4e75417.png
+
+# AI / Assignment instructions and plan files
+instruction file.md
+implementation plan 2.md
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
