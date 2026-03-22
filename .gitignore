@@ -1,18 +1,29 @@
 # Dependencies
 node_modules/
+package.json
+package-lock.json
+
+# Git internals
 .github/
 
-# Temporary directories and raw assets
+# Temporary / working directories
 14/
 assign photos/
 
-# Extra generated screenshots and image files
+# Reference & screenshot images (dev only)
 Gushwork Assignment.png
+Gushwork Assignment-small.png
 final-screenshot.png
 puppeteer-screenshot.png
+local-screenshot.png
+local-screenshot-scrolled.png
 ce5a170c60004b853d7c68fb0ec5bf7ee4e75417.png
+last website.jpeg
 
-# AI / Assignment instructions and plan files
+# Dev / helper scripts
+take_screenshot.js
+
+# AI / Assignment planning docs
 instruction file.md
 implementation plan 2.md
 

@@ -1815,10 +1815,73 @@ body.modal-open .page-wrapper {
 /* =====================================================
    RESPONSIVE BREAKPOINTS
    ===================================================== */
+@media (max-width: 1600px) {
+  :root {
+    --page-px: 100px;
+    --section-py: 100px;
+  }
+
+  .container {
+    width: min(1240px, calc(100% - (var(--page-px) * 2)));
+  }
+
+  .hero,
+  .specs,
+  .features,
+  .faq,
+  .applications,
+  .process,
+  .testimonials,
+  .portfolio,
+  .resources,
+  .cta,
+  .footer {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --page-px: 100px;
+    --section-py: 100px;
+  }
+
+  .hero,
+  .specs,
+  .features,
+  .faq,
+  .applications,
+  .process,
+  .testimonials,
+  .portfolio,
+  .resources,
+  .cta,
+  .footer {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+}
+
 @media (max-width: 1200px) {
   :root {
     --page-px: 80px;
     --section-py: 80px;
+  }
+
+  .hero,
+  .specs,
+  .features,
+  .faq,
+  .applications,
+  .process,
+  .testimonials,
+  .portfolio,
+  .resources,
+  .cta,
+  .footer {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
   }
 }
 
@@ -1826,6 +1889,21 @@ body.modal-open .page-wrapper {
   :root {
     --page-px: 60px;
     --section-py: 80px;
+  }
+
+  .hero,
+  .specs,
+  .features,
+  .faq,
+  .applications,
+  .process,
+  .testimonials,
+  .portfolio,
+  .resources,
+  .cta,
+  .footer {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
   }
 
   .hero__content {
@@ -1845,6 +1923,21 @@ body.modal-open .page-wrapper {
   :root {
     --page-px: 48px;
     --section-py: 80px;
+  }
+
+  .hero,
+  .specs,
+  .features,
+  .faq,
+  .applications,
+  .process,
+  .testimonials,
+  .portfolio,
+  .resources,
+  .cta,
+  .footer {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
   }
 
   .features__grid {
@@ -1924,3 +2017,28 @@ body.modal-open .page-wrapper {
     font-size: 13px;
   }
 }
+
+/* =====================================================
+   MOBILE OPTIMIZATIONS (360px and below)
+   ===================================================== */
+@media (max-width: 360px) {
+  :root {
+    --page-px: 16px;
+    --section-py: 48px;
+  }
+
+  .hero,
+  .specs,
+  .features,
+  .faq,
+  .applications,
+  .process,
+  .testimonials,
+  .portfolio,
+  .resources,
+  .cta,
+  .footer {
+    padding-top: var(--section-py) !important;
+    padding-bottom: var(--section-py) !important;
+  }
+}

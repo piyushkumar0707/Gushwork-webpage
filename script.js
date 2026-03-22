@@ -95,24 +95,25 @@ document.addEventListener('DOMContentLoaded', () => {
   -------------------------------------------------- */
   const nav       = document.querySelector('.nav');
   const hamburger = document.getElementById('hamburger-btn');
+  const navLinks  = document.getElementById('nav-links');
 
-  if (nav && hamburger) {
+  if (nav && hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
-      const isOpen = nav.classList.contains('nav--open');
-      nav.classList.toggle('nav--open', !isOpen);
+      const isOpen = navLinks.classList.contains('is-open');
+      navLinks.classList.toggle('is-open', !isOpen);
       hamburger.setAttribute('aria-expanded', String(!isOpen));
     });
 
     document.addEventListener('click', (event) => {
       if (!nav.contains(event.target)) {
-        nav.classList.remove('nav--open');
+        navLinks.classList.remove('is-open');
         hamburger.setAttribute('aria-expanded', 'false');
       }
     });
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') {
-        nav.classList.remove('nav--open');
+        navLinks.classList.remove('is-open');
         hamburger.setAttribute('aria-expanded', 'false');
       }
     });
